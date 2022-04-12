@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* viñetas cuadradas*/
+ul{
+    list-style: square;
+}
+
+
+.enLinea {
+    display: inline-block;          
+    padding: 1.2%;
+    font-size: 20px; 
+}
+
+.transparente {
+
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.h2Contacto {
+    padding-bottom: 20px;
+}
+
+button {
+    padding: 5px;
+}
+
+/*imagen de fondo*/
+body {
+    background-image: url(../img/CssImagenFondo/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*1er fuente de letra para los titulos*/
+@font-face {
+    font-family: "Monea Alegante";
+    src: url(../Fuentes/Monea\ Alegante.otf);
+}
+
+/*2da fuente de letra para el cuerpo de la pag*/
+@font-face {
+    font-family: "Bar Booth at Matts";
+    src: url(../Fuentes/Bar\ Booth\ at\ Matts.ttf);
+}
+
+/*modif de titulos de los html*/
+h1 {
+    color: rgb(188, 226, 51);
+    font-size: 80px;
+    font-family: "Monea Alegante";
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 10px 30px;
+
+}
+
+/*aplicacion de fuente descargada en ids*/
+#equipaciones{
+    font-family: "Bar Booth at Matts";       
+}
+
+.color1 {
+    color: rgb(255, 255, 255);
+}
+
+.color2 {
+    color: aqua;
+}
+
+.colorBlanco {
+    color: white;
+}
+
+
+.fuenteMediana {
+    font-size: 23px;
+}
+
+footer{
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.fuenteMedianaGrande {
+    font-size: 30px;
+}
+
+#footer {
+    font-family: "Monea Alegante";
+    font-size: 35px;
+    text-align: center;}
+
+
+
+.listaNav {
+
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+.listaNav li {
+    font-size: 22px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#imgsIndex  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#ImgsHab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+
+#framesIndex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#equipaciones h2 {
+    padding-bottom: 30px;
+}
+
+.separacion {
+padding-bottom: 32px;
+}
+
+img:hover{
+    transform: scale(1.2);
+    transition: 0.9s;
+}
+
+
+.listaNav li{
+    height: 10px;
+    transition: ease-out 2s;
+    transition: height .3s;
+}
+
+.listaNav li:hover {
+    background-color: rgb(66, 111, 168);
+    height: 20px;
+}
+
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+ }
+ 
+
+h1 {
+    animation-duration: 2.5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ 
+
+
+@media (min-width: 768px) {
+    #imgsIndex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        
+    }
+
+    #imgsHab {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    #framesIndex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 40px;
+    }
+
+    #serviciosImg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+        
+}
+
+@media (min-width: 1024px) {
+    #imgsIndex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #imgsHab {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+}
+
+
+
+
+
