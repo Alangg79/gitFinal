@@ -12,7 +12,6 @@ ul{
     list-style: square;
 }
 
-
 .enLinea {
     display: inline-block;          
     padding: 1.2%;
@@ -33,9 +32,9 @@ button {
     padding: 5px;
 }
 
-/*imagen de fondo*/
+    /*imagen de fondo*/
 body {
-    background-image: url(../img/CssImagenFondo/wallpaperflare.com_wallpaper.jpg);
+    background-image: url(../img/CssImagenFondo/ImgFondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -54,10 +53,15 @@ body {
     src: url(../Fuentes/Bar\ Booth\ at\ Matts.ttf);
 }
 
+@font-face {
+    font-family: "creamDemo" ;
+    src: url(../Fuentes/cream-DEMO.ttf);
+}
+
 /*modif de titulos de los html*/
 h1 {
     color: rgb(188, 226, 51);
-    font-size: 80px;
+    font-size: 6.563rem;
     font-family: "Monea Alegante";
     text-align: center;
     font-weight: bold;
@@ -65,17 +69,33 @@ h1 {
 
 }
 
+nav {
+    background-attachment: fixed;
+}
+
 /*aplicacion de fuente descargada en ids*/
 #equipaciones{
     font-family: "Bar Booth at Matts";       
 }
+
+/*#descripcion{
+    font-family: "creamDemo";
+    font-weight: bold;
+        
+}*/
+
+.negrita {
+    font-weight: bold;
+    font-size: 2.8rem;
+}
+
 
 .color1 {
     color: rgb(255, 255, 255);
 }
 
 .color2 {
-    color: aqua;
+    color: #062783  ;
 }
 
 .colorBlanco {
@@ -84,7 +104,7 @@ h1 {
 
 
 .fuenteMediana {
-    font-size: 23px;
+    font-size: 30px;
 }
 
 footer{
